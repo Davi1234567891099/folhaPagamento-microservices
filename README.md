@@ -50,7 +50,7 @@ ENTRYPOINT ["java","-jar","/hr-config-server.jar"]
 ```
 mvnw clean package
 docker build -t hr-config-server:v1 .
-docker run hr-config-server:v1 -p 8888:8888 --name hr-config-server --network hr-net -e GITHUB_USER=acenelio -e GITHUB_PASS=
+docker run hr-config-server:v1 -p 8888:8888 --name hr-config-server --network hr-net -e GITHUB_USER=seu_usuario -e GITHUB_PASS=sua_senha
 ```
 
 ## hr-eureka-server
